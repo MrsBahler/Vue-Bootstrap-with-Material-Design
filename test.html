@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<div class="container">
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label>Wählen Sie die hochzuladenden Dateien von Ihrem Rechner aus:<br><br>
+            <input name="datei[]" type="file" multiple>
+        </label>
+        <br><br>
+        <button class="button">hochladen</button>
+    </form>
+</div>
+</body>
+</html>
