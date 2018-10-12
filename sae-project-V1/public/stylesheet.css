@@ -1,0 +1,326 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  display: table;
+  position: relative;
+}
+
+h1 {
+  margin: 0px auto;
+  display: table;
+  font-size: 26px;
+  padding: 40px 0px;
+  color: #000000;
+  text-align: center;
+}
+
+h1 span {
+  font-weight: 500;
+}
+
+header {
+  width: 100%;
+  display: table;
+  background-color: #000000;
+  margin-bottom: 50px;
+}
+
+#logo {
+  float: left;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 20px 0px;
+}
+
+nav {
+  width: auto;
+  float: right;
+}
+
+nav ul {
+  display: table;
+  float: right;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li:last-child {
+  padding-right: 0px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 25px 20px;
+  display: inline-block;
+  transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover i {
+  color: #000000;
+  transition: all 0.5s ease 0s;
+}
+
+nav ul li a i {
+  padding-right: 10px;
+  color: #ffffff;
+  transition: all 0.5s ease 0s;
+}
+
+.toggle-menu ul {
+  display: table;
+  width: 25px;
+}
+
+.toggle-menu ul li {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.toggle-menu ul li:last-child {
+  margin-bottom: 0px;
+}
+
+input[type=checkbox], label {
+  display: none;
+}
+
+.content {
+  display: table;
+  margin-bottom: 60px;
+  width: 900px;
+}
+
+.content h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  border-bottom: 1px solid #ff4000;
+  display: table;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #7c7c7c;
+  text-align: justify;
+}
+
+footer {
+  display: table;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.social {
+  margin: 0px auto;
+  display: table;
+  display: table;
+}
+
+.social li {
+  float: left;
+  padding: 0px 10px;
+}
+
+.social li a {
+  color: #000000;
+  transition: all 0.5s ease 0s;
+}
+
+.social li a:hover {
+  color: #ff4000;
+  transition: all 0.5s ease 0s;
+}
+
+.file-input {
+  display: inline-block;
+  text-align: left;
+  background: #fff;
+  padding: 16px;
+  width: 450px;
+  position: relative;
+  border-radius: 3px;
+}
+
+.file-input > [type='file'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.file-input > .button {
+  display: inline-block;
+  cursor: pointer;
+  background: #eee;
+  padding: 8px 16px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.file-input:hover > .button {
+  background: dodgerblue;
+  color: white;
+}
+
+.file-input > .label {
+  color: #333;
+  white-space: nowrap;
+  opacity: .3;
+}
+
+.file-input.-chosen > .label {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1440px) {
+  section {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  header {
+    padding: 20px 0px;
+  }
+
+  #logo {
+    padding: 0px;
+  }
+
+  input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    background: none;
+  }
+
+  input[type=checkbox]:focus {
+    background: none;
+  }
+
+  label {
+    float: right;
+    padding: 8px 0px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  input[type=checkbox]:checked ~ nav {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 53px;
+    background-color: #002e5b;
+    padding: 0px;
+    z-index: 99;
+  }
+
+  nav ul {
+    width: auto;
+  }
+
+  nav ul li {
+    float: none;
+    padding: 0px;
+    width: 100%;
+    display: table;
+  }
+
+  nav ul li a {
+    color: #FFF;
+    font-size: 15px;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+  }
+
+  nav ul li a i {
+    color: #000000;
+    padding-right: 13px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  h1 {
+    padding: 25px 0px;
+  }
+
+  h1 span {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  label {
+    padding: 5px 0px;
+  }
+
+  #logo {
+    font-size: 20px;
+  }
+
+  nav {
+    top: 47px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    padding: 20px 0px;
+  }
+}
