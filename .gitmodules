@@ -1,6 +1,3 @@
-[submodule "htdocs/htdocs/backend"]
-	path = htdocs/htdocs/backend
-	url = https://nbahler@bitbucket.org/j_weiss/projectaction.git
 [submodule "htdocs/projectaction"]
 	path = htdocs/projectaction
 	url = https://nbahler@bitbucket.org/j_weiss/projectaction.git
