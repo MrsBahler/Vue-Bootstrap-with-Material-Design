@@ -36,3 +36,7 @@
   background-color: #5bc0de;
   border-radius: .25em;
 }
+
+.rounded {
+  border-radius: 2.125rem !important;
+}

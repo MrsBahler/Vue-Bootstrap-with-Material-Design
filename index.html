@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,9 +11,9 @@
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="css/style.css" rel="stylesheet">
   <link href="ext/src/bootstrap-tagsinput.css" rel="stylesheet">
   <link href="ext/css/jasny-bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>SAE - Project Action</title>
 </head>
 
@@ -36,7 +35,7 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#upload">Upload</a>
+          <a class="nav-link" href="templates/upload.html">Upload</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#manage">Manage</a>
@@ -58,10 +57,6 @@
       </ul>
     </div>
   </nav>
-</header>
-<!--Main Navigation-->
-
-<main>
   <!-- Full Height Modal Right -->
   <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
@@ -80,14 +75,17 @@
           ...
         </div>
         <div class="modal-footer justify-content-center">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="rounded btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="rounded btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
   </div>
   <!-- Full Height Modal Right -->
+</header>
+<!--Main Navigation-->
 
+<main>
   <div class="container-fluid mt-5 pb-4">
 
     <!-- Jumbotron -->
@@ -103,7 +101,7 @@
             <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
               obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima debitis
               perferendis vitae cumque et quo impedit.</p>
-            <a class="btn blue-gradient"><i class="fa fa-clone left"></i> View project</a>
+            <a class="rounded btn blue-gradient"><i class="fa fa-clone left"></i> View project</a>
 
           </div>
         </div>
@@ -133,7 +131,7 @@
               kannst du deine Dateien ordnen, umbenennen, löschen, kopieren, verschieben...</p>
 
             <!-- Button -->
-            <a href="#" class="btn btn-primary blue-gradient">Hier zum Dateimanager</a>
+            <a href="#" class="btn rounded btn-primary blue-gradient">Hier zum Dateimanager</a>
 
           </div>
         </div>
@@ -163,12 +161,11 @@
               ob als Foto, Text-Datei, oder Pdf. <br>Das ist ein Demo Upload-Button:</p>
             <!-- Button -->
             <div class="fileinput fileinput-new" data-provides="fileinput">
-              <span class="btn btn-default blue-gradient btn-file"><i class="fa fa-upload mr-3"></i><span
+              <span class="btn rounded btn-default blue-gradient btn-file"><i class="fa fa-upload mr-3"></i><span
                   class="fileinput-new">Datei auswählen</span><span class="fileinput-exists">Datei ändern</span>
                   <input type="file" name="..."></span>
               <span class="fileinput-filename"></span>
               <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
-
             </div>
           </div>
 
@@ -199,7 +196,7 @@
               <input type="text" value="Das, ist ein, Beispiel" data-role="tagsinput"/>
             </label>
             <!-- Button -->
-            <a href="#" class="btn btn-primary blue-gradient">Zum Dashboard</a>
+            <a href="#" class="btn rounded btn-primary blue-gradient">Zum Dashboard</a>
           </div>
         </div>
         <!-- Card -->
