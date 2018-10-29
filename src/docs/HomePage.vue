@@ -1,61 +1,59 @@
 <template>
     <div>
-      <EdgeHeader color="teal darken-1"/>
-      <div class="container free-bird">
-        <row>
-          <column md="10" class="mx-auto float-none white z-depth-1 py-2 px-2">
-            <card-body>
-              <h2 class="h2-responsive pb-4"><strong>MDB Vue Demo App</strong></h2>
-              <p>Vue Bootstrap with Material Design</p>
-              <p class="pb-4">This application shows the actual use of MDB Vue components in the application.</p>
-              <row class="d-flex flex-row justify-content-center">
-                <a href="https://mdbootstrap.com/vue/?utm_source=DemoApp&utm_medium=MDBVue" waves-fixed class="border nav-link border-light rounded mr-1" target="_blank"><fa icon="graduation-cap" class="mr-2"/>Official documentation</a>
-                <!-- <btn tag="a" size="sm" color="default" href="#/components/liveDemo" target="_blank">Live Demo</btn> -->
-              </row>
-            </card-body>
-          </column>
-        </row>
-      </div>
-      <container>
+      <container fluid>
         <div>
-          <h2 class="text-center mt-5 font-weight-bold">Why is it so great?</h2>
-          <column md="10" class="mx-auto text-center">
-            <p class="pt-4">Google has designed a Material Design to make the web more beautiful and more user-friendly.</p>
-            <p>Twitter has created a Bootstrap to support you in faster and easier development of responsive and effective websites.</p>
-            <p>We present you a framework containing the best features of both of them - Material Design for Bootstrap.</p>
-          </column>
+          <div class="card card-image" style="background-image: url(https://images.unsplash.com/photo-1518081461904-9d8f136351c2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a815e999d0f593c8c8bbcb6473b0d39&auto=format&fit=crop&w=1977&q=80);">
+            <md-mask overlay="black-strong" flexCenter></md-mask>
+            <div class="text-white text-center py-5 px-4 my-5">
+              <div>
+                <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>SAE - Project Action Homepage</strong></h2>
+                <p class="mx-5 mb-5">Vue Bootstrap with Material Design</p>
+                <p class="pb-4">This application shows the actual use of MDB Vue components in the application.</p>
+                <a class="btn btn-outline-white btn-md"><i class="fa fa-clone left"></i> View project</a>
+              </div>
+            </div>
+          </div>
         </div>
         <hr class="my-5">
         <row>
           <column md="4" class="mb-5">
-            <column col="2" md="2" class="float-left">
-              <fa icon="css3" size="2x" class="pink-text" />
-            </column>
-            <column col="10" md="8" lg="10" class="float-right">
-              <h4 class="font-weight-bold">CSS</h4>
-              <p class="grey-text">Animations, colours, shadows, skins and many more! Get to know all our css styles in one place.</p>
-              <navbar-item router href="/css" waves-fixed><btn size="sm" color="teal darken-1">Learn more</btn></navbar-item>
-            </column>
+            <card>
+              <view-wrapper zoom hover src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap" waves>
+                <md-mask overlay="blue-slight" flexCenter text="Upload Files">
+                </md-mask>
+              </view-wrapper>
+              <card-body>
+                <card-title>Card with waves effect</card-title>
+                <card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</card-text>
+                <navbar-item router href="/components" waves-fixed><btn color="info">Learn more</btn></navbar-item>
+              </card-body>
+            </card>
           </column>
           <column md="4" class="mb-5">
-            <column col="2" md="2" class="float-left">
-              <fa icon="cubes" size="2x" class="blue-text" />
-            </column>
-            <column col="10" md="8" lg="10" class="float-right">
-              <h4 class="font-weight-bold">COMPONENTS</h4>
-              <p class="grey-text">Ready-to-use components that you can use in your applications. Both basic and extended versions!</p>
-              <navbar-item router href="/components" waves-fixed><btn size="sm" color="default">Learn more</btn></navbar-item>
-            </column>
+            <card>
+              <view-wrapper zoom hover src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" alt="Card image cap" waves>
+                <md-mask overlay="blue-slight" flexCenter text="Upload Files">
+                </md-mask>
+              </view-wrapper>
+              <card-body>
+                <card-title>Card with waves effect</card-title>
+                <card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</card-text>
+                <navbar-item router href="/components" waves-fixed><btn color="info">Learn more</btn></navbar-item>
+              </card-body>
+            </card>
           </column>
           <column md="4" class="mb-5">
-            <column col="2" md="2" class="float-left">
-              <fa icon="code" size="2x" class="green-text" />
-            </column>
-            <column col="10" md="8" lg="10" class="float-right">
-              <h4 class="font-weight-bold">ADVANCED</h4>
-              <p class="grey-text">Advanced components such as charts, carousels, tooltips and popovers. All in Material Design version.</p>
-              <navbar-item router href="/advanced" waves-fixed><btn size="sm" color="teal darken-1">Learn more</btn></navbar-item>
-            </column>
+            <card>
+              <view-wrapper zoom hover src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap" waves>
+                <md-mask overlay="blue-slight" flexCenter text="Upload Files">
+                </md-mask>
+              </view-wrapper>
+              <card-body>
+                <card-title>Card with waves effect</card-title>
+                <card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</card-text>
+                <navbar-item router href="/components" waves-fixed><btn color="info">Learn more</btn></navbar-item>
+              </card-body>
+            </card>
           </column>
         </row>
         <hr class="my-5">
@@ -129,7 +127,8 @@
 </template>
 
 <script>
-import { Container, Column, Row, Fa, Navbar, NavbarItem, NavbarNav, NavbarCollapse, Btn, EdgeHeader, CardBody } from 'mdbvue';
+import { Container, Column, Row, Fa, MdMask, ViewWrapper, Navbar, NavbarItem, NavbarNav,
+  NavbarCollapse, Btn, EdgeHeader, CardBody, Card, CardImg, CardTitle, CardText } from 'mdbvue';
 
 export default {
   name: 'HomePage',
@@ -138,13 +137,19 @@ export default {
     Column,
     Row,
     Fa,
+    MdMask,
+    ViewWrapper,
     Navbar,
     NavbarItem,
     NavbarNav,
     NavbarCollapse,
     Btn,
     EdgeHeader,
-    CardBody
+    CardBody,
+    Card,
+    CardImg,
+    CardTitle,
+    CardText
   }
 };
 </script>

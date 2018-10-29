@@ -1,29 +1,24 @@
 <template>
   <div id="app" class="flyout">
-    <navbar dark position="top" class="default-color" scrolling>
+    <navbar dark position="top" class="blue-gradient" scrolling>
       <mdb-navbar-brand href="#/" style="font-weight: bolder;">
-        MDB Vue
+        Project Action
       </mdb-navbar-brand>
       <navbar-collapse>
-        <navbar-nav right>
+        <navbar-nav left>
           <navbar-item router exact href="/" waves-fixed>Home</navbar-item>
-          <navbar-item router href="/css" waves-fixed>CSS</navbar-item>
-          <navbar-item router href="/components" waves-fixed>Components</navbar-item>
-          <navbar-item router href="/advanced" waves-fixed>Advanced</navbar-item>
-          <navbar-item router href="/navigation" waves-fixed>Navigation</navbar-item>
-          <navbar-item router href="/forms" waves-fixed>Forms</navbar-item>
-          <navbar-item router href="/tables" waves-fixed>Tables</navbar-item>
-          <navbar-item router href="/modals" waves-fixed>Modals</navbar-item>
-          <navbar-item router href="/addons" waves-fixed>Addons</navbar-item>
+          <navbar-item router href="/css" waves-fixed>Upload</navbar-item>
+          <navbar-item router href="/components" waves-fixed>Manage</navbar-item>
+          <navbar-item router href="/advanced" waves-fixed>Learn</navbar-item>
         </navbar-nav>
       </navbar-collapse>
     </navbar>
     <main :style="{marginTop: '60px'}">
       <router-view></router-view>
     </main>
-    <Footer color="default-color">
+    <Footer color="blue-gradient">
       <p class="footer-copyright mb-0 py-3 text-center">
-        &copy; {{new Date().getFullYear()}} Copyright: <a href="https://www.mdbootstrap.com/?utm_source=DemoApp&utm_medium=MDBVue"> MDBootstrap.com </a>
+        &copy; {{new Date().getFullYear()}} Copyright: <a href="#"> Nina Bahler, Johannes Weiß, Christian Schmid, Benedikt Seurig </a>
       </p>
     </Footer>
   </div>
