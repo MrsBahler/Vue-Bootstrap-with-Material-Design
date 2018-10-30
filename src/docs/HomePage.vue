@@ -1,62 +1,65 @@
 <template>
     <div>
       <container fluid>
-        <div>
+        <div class="pt-3">
           <div class="card card-image" style="background-image: url(https://images.unsplash.com/photo-1518081461904-9d8f136351c2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a815e999d0f593c8c8bbcb6473b0d39&auto=format&fit=crop&w=1977&q=80);">
-            <md-mask overlay="black-strong" flexCenter></md-mask>
-            <div class="text-white text-center py-5 px-4 my-5">
+            <div class="text-white text-center rgba-stylish-strong py-5 px-5 l-5">
               <div>
                 <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>SAE - Project Action Homepage</strong></h2>
-                <p class="mx-5 mb-5">Vue Bootstrap with Material Design</p>
-                <p class="pb-4">This application shows the actual use of MDB Vue components in the application.</p>
+                <h4 class="h4-responsive p-2 cyan-text font-weight-bold"><strong>Lernen mit System</strong></h4>
+                <p class="pb-4">This application shows the actual use of MDB Vue components in the application.<br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+                  obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam.<br>Modi qui quidem minima debitis
+                  perferendis vitae cumque et quo impedit.</p>
                 <a class="btn btn-outline-white btn-md"><i class="fa fa-clone left"></i> View project</a>
               </div>
             </div>
           </div>
         </div>
-        <hr class="my-5">
+        <hr class="my-4">
         <row>
           <column md="4" class="mb-5">
-            <card>
+            <card class="h-100">
               <view-wrapper zoom hover src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap" waves>
-                <md-mask overlay="blue-slight" flexCenter text="Upload Files">
+                <md-mask overlay="blue-slight" flexCenter text="Manage Files">
                 </md-mask>
               </view-wrapper>
               <card-body>
-                <card-title>Card with waves effect</card-title>
-                <card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</card-text>
-                <navbar-item router href="/components" waves-fixed><btn color="info">Learn more</btn></navbar-item>
+                <card-title>Datei Management</card-title>
+                <card-text>Ordne deine Zusammenfassungen, Übungsprüfungen und Aufgaben je nach Fach und Thema.
+                  Hier kannst du deine Dateien ordnen: </card-text>
+                <navbar-item router href="/manage" waves-fixed><btn gradient="blue" class="rounded">Data management</btn></navbar-item>
               </card-body>
             </card>
           </column>
           <column md="4" class="mb-5">
-            <card>
+            <card class="h-100">
               <view-wrapper zoom hover src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" alt="Card image cap" waves>
                 <md-mask overlay="blue-slight" flexCenter text="Upload Files">
                 </md-mask>
               </view-wrapper>
               <card-body>
-                <card-title>Card with waves effect</card-title>
-                <card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</card-text>
-                <navbar-item router href="/components" waves-fixed><btn color="info">Learn more</btn></navbar-item>
+                <card-title>Datei Upload</card-title>
+                <card-text>Lade deine Prüfungen, Zusammenfassungen oder Unterrichtsmitschriebe einfach hoch, egal ob als Foto, Text-Datei, oder Pdf.</card-text>
+                <navbar-item router href="/upload" waves-fixed><btn gradient="blue" class="rounded">Data upload</btn></navbar-item>
               </card-body>
             </card>
           </column>
           <column md="4" class="mb-5">
-            <card>
+            <card class="h-100">
               <view-wrapper zoom hover src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap" waves>
-                <md-mask overlay="blue-slight" flexCenter text="Upload Files">
+                <md-mask overlay="blue-slight" flexCenter text="Learn Files">
                 </md-mask>
               </view-wrapper>
               <card-body>
-                <card-title>Card with waves effect</card-title>
-                <card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</card-text>
-                <navbar-item router href="/components" waves-fixed><btn color="info">Learn more</btn></navbar-item>
+                <card-title>Lernen mit Erfolgsgarantie</card-title>
+                <card-text>Eine Übersicht deines aktuellen Lernstandes. Du kannst Lernmaterialien mit einem Tag markieren und den Lernfortschritt tracken.</card-text>
+                <navbar-item router href="/learn" waves-fixed><btn gradient="blue" class="rounded">Learn more</btn></navbar-item>
               </card-body>
             </card>
           </column>
         </row>
-        <hr class="my-5">
+        <hr class="my-4">
         <row>
           <column md="4" class="mb-5">
             <column col="2" md="2" class="float-left">
@@ -89,7 +92,7 @@
             </column>
           </column>
         </row>
-        <hr class="my-5">
+        <hr class="my-4">
         <row class="mb-4">
           <column md="4" class="mb-5">
             <column col="2" md="2" class="float-left">

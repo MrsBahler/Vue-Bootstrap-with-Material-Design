@@ -2,9 +2,9 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 // CATEGORIES
-import CSSPage from '../docs/categories/CSSPage';
-import ComponentsPage from '../docs/categories/ComponentsPage';
-import AdvancedPage from '../docs/categories/AdvancedPage';
+import UploadPage from '../docs/categories/UploadPage';
+import ManagePage from '../docs/categories/ManagePage';
+import LearnPage from '../docs/categories/LearnPage';
 import NavigationMenuPage from '../docs/categories/NavigationMenuPage';
 import FormsMenuPage from '../docs/categories/FormsMenuPage';
 import TablesPage from '../docs/categories/TablesPage';
@@ -46,7 +46,7 @@ import NotificationPage from '../docs/NotificationPage';
 import CollapsePage from '../docs/CollapsePage';
 import PaginationPage from '../docs/PaginationPage';
 import PanelPage from '../docs/PanelPage';
-import ChartPage from '../docs/ChartPage';
+import ProgramPage from '../docs/ProgramPage';
 import ProgressBarsPage from '../docs/ProgressBarsPage';
 import TooltipPage from '../docs/TooltipPage';
 import PopoverPage from '../docs/PopoverPage';
@@ -66,6 +66,10 @@ import FooterPage from '../docs/FooterPage';
 import SliderPage from '../docs/SliderPage';
 import VideoPage from '../docs/VideoPage';
 
+// FILEUPLOADER
+import VueClip from 'vue-clip';
+Vue.use(VueClip);
+
 Vue.use(Router);
 
 export default new Router({
@@ -78,17 +82,17 @@ export default new Router({
 
     // CATEGORIES
     {
-      path: '/css',
-      name: 'CSSPage',
-      component: CSSPage
+      path: '/upload',
+      name: 'UploadPage',
+      component: UploadPage
     }, {
-      path: '/components',
-      name: 'ComponentsPage',
-      component: ComponentsPage
+      path: '/manage',
+      name: 'ManagePage',
+      component: ManagePage
     }, {
-      path: '/advanced',
-      name: 'AdvancedPage',
-      component: AdvancedPage
+      path: '/learn',
+      name: 'LearnPage',
+      component:LearnPage
     },
     {
       path: '/navigation',
@@ -254,9 +258,9 @@ export default new Router({
       name: 'PanelPage',
       component: PanelPage
     }, {
-      path: '/advanced/chart',
-      name: 'ChartPage',
-      component: ChartPage
+      path: '/learn/program',
+      name: 'ProgramPage',
+      component: ProgramPage
     }, {
       path: '/components/progress-bars',
       name: 'ProgressBarsPage',
