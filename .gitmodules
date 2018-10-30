@@ -1,0 +1,3 @@
+[submodule "/projectaction"]
+	path = /projectaction
+	url = https://nbahler@bitbucket.org/j_weiss/projectaction.git
